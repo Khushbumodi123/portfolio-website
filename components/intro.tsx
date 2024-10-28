@@ -9,6 +9,7 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import YashSahsaniProfilePic from "@/public/YashSahsaniProfilePic.jpg";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -31,13 +32,13 @@ export default function Intro() {
             }}
           >
             <Image
-              src=""
+              src={YashSahsaniProfilePic} 
               alt="Yash Sahsani"
-              width="192"
-              height="192"
-              quality="95"
+              width={192} 
+              height={192}
+              quality={95}
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl" // Adjust height and width if needed
             />
           </motion.div>
 
@@ -94,7 +95,7 @@ export default function Intro() {
 
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/CV.pdf"
+          href="/ResumeYash.pdf"
           download
         >
           Download CV{" "}

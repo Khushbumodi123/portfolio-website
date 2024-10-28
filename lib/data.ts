@@ -2,9 +2,12 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import RentRipple from "@/public/RentRipple.jpg";
+import GreenCart from "@/public/GreenCart.png";
+import GreenCartLogo from "@/public/GreenCartLogo.png";
+import YoutubeNLP from "@/public/YoutubeNLP.jpeg";
+import blockchain from "@/public/blockchain.jpg";
+import MulticlientReverseShell from "@/public/MulticlientReverseShell.jpeg";
 
 export const links = [
   {
@@ -73,25 +76,39 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "RentRipple",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "RentRipple is a marketplace platform connecting property owners and renters for efficient property management, user authentication, real-time chat, and streamlined user engagement.",
+      tags: ["JSON Web Token (JWT)", "React.js", "TypeScript", "Redis", "Terraform", "Node.js", "MongoDB", "Next.js", "REST APIs", "Socket.io", "NestJS"],
+    imageUrl: RentRipple,
   },
   {
-    title: "rmtDev",
+    title: "GreenCart",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "GreenCart is an e-commerce website dedicated to selling eco-friendly and sustainable products, promoting greener choices for everyday living.",
+      tags: ["Django", "Tailwind CSS", "SQL", "CI/CD", "Leadership", "Flask", "Microservices", "Agile Methodologies"],
+      imageUrl: GreenCartLogo,
   },
   {
-    title: "Word Analytics",
+    title: "YoutubeNLP",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+    "YouTubeNLP is a microservices-based application that segments YouTube videos by emotional content, leveraging FastAPI, NLP, and ML algorithms for dynamic analysis and scalable deployment.",
+    tags: ["Docker", "Kubernetes", "Nginx", "Next.js", "Site Reliability Engineering", "DevOps", "NLP", "IBM Cloud", "AWS"],
+    imageUrl: YoutubeNLP,
+  },
+  {
+    title: "MediaChain",
+    description:
+    "Its a Hyperledger Fabric based project.Its a Blockchain application to distribute royalties for the entertainment industry.",
+    tags: ["Hyperledger", "Node.js", "Cloud Applications", "Agile Methodologies", "Blockchain"],
+    imageUrl: blockchain,
+  },
+  {
+    title: "MultiClient Reverse Shell",
+    description:
+    "This project is a proof of concept (POC) worm and ransomware that exploits the psexec vulnerability in Windows and SSH vulnerability in Linux systems to download and execute ransomware files, similar to WannaCry and Mirai.",
+    tags: ["Scripting", "Python", "Kali Linux", "Operating Systems", "Cybersecurity", "Socket Programming", "Malware Detection", "Reverse Engineering"],    
+    imageUrl: MulticlientReverseShell,
   },
 ] as const;
 
